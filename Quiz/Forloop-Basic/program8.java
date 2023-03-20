@@ -3,8 +3,8 @@ class Core2web{
 	
 	public static void main(String[] pratik){
 		
-	//	int x=10;
-/*
+		int x=10;
+
 		{
 			int x=20;
 			System.out.println(x);
@@ -18,7 +18,7 @@ class Core2web{
 		}
 	}
 	
-	
+	/*
 		int x=10;
 
 		{
@@ -44,7 +44,7 @@ class Core2web{
 	}
 	System.out.println(x+" "+y);
 	}*/
-
+/*
 	int x=10,y=20;
 
 	{
@@ -56,4 +56,5 @@ class Core2web{
 	}
 	System.out.println(x+" "+y);
 	}
+*/
 }
