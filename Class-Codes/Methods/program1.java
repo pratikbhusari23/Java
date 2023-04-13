@@ -25,3 +25,10 @@ class MethodDemo{
 
 
 }
+/*
+program1.java:10: error: non-static method gun() cannot be referenced from a static context
+                gun();
+		^
+1 error
+
+*/
