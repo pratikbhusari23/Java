@@ -33,7 +33,7 @@ class Demo {
 			System.out.println("No Even elements Present");
 		}
 		else{
-			System.out.println("Sum of Odd elements : "+product);
+			System.out.println("Product of Even Elements : "+product);
 		}
 
 

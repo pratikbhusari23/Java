@@ -12,29 +12,32 @@ class Demo {
 
 		int arr[]= new int[size];
 		
-		int sum=0;
+		int product=1;
+		
+		System.out.println("Enter Array Elements : ");
 		
 		int flag=0;
 
-		System.out.println("Enter Array Elements : ");
 		for(int i=0 ; i<arr.length ; i++){
 			
 			arr[i]=Integer.parseInt(br.readLine());
-
-			if(arr[i]%2!=0){
-				flag=1;				
-				sum+=arr[i];
+			if(arr[i]%5==0){
+				flag=1;
 			}
 		}
-		
 		if(flag==1){
-			System.out.println("Sum of Odd elements : "+sum);
+			System.out.println("Elemenst Divisible by 5 Include :");
+			for(int i=0 ; i<arr.length ; i++){
+			
+				if(arr[i]%5==0){
+				
+					System.out.println(arr[i]+" ");
+				
+				}
+			}
 		}
 		else {
-		
-			System.out.println("No odd Elements Present !");
+			System.out.println("No Single element present that is divisible by 5 !");
 		}
-
-
 	}
 }
