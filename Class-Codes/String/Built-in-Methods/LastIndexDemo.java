@@ -1,6 +1,6 @@
 import java.io.*;
 
-class IndexOfDemo{
+class LastIndexDemo{
 	
 	public static void main(String[] pratik)throws IOException{
 		

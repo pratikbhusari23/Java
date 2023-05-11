@@ -1,14 +1,17 @@
 import java.io.*;
 
-class LengthDemo{
+class ReplaceDemo{
 	
 	public static void main(String[] args) throws IOException{
-		
-
+	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		String str1 = br.readLine();
+		String str1 = "Pratik";
 
-		System.out.println(str1.length());   //8
+		str1=str1.replace("P","S");
+
+		System.out.println(str1);
+	
 	}
+
 }
