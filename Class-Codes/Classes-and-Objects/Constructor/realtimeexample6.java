@@ -23,6 +23,10 @@ class MainDemo {
 
         obj1.display();
         obj2.display();
+
+	Virtualization obj3 = new Virtualization();
+
+	obj3.display();
     }
 }
 /*

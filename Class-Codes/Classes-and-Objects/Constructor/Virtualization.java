@@ -1,3 +1,4 @@
+/* 
 class Virtualization {
     static String defaultVirtualizationPlatform = "VMware";
     int virtualMachineID;
@@ -35,3 +36,36 @@ Virtual Machine ID: 1
 Default Virtualization Platform: Hyper-V
 Virtual Machine ID: 2
 */
+
+
+class Virtualization {
+    
+    static int virtualMachineID=1;
+    private String virtualMachine = "VMware1";
+
+    void display() {
+        
+        System.out.println("Virtual Machine ID: " + virtualMachineID);
+        System.out.println("Virtual Machine: " + virtualMachine);
+    }
+
+   // display();
+}
+
+class MainDemo {
+    public static void main(String[] args) {
+        Virtualization obj1 = new Virtualization();
+        Virtualization obj2 = new Virtualization();
+
+
+
+        obj1.display();
+        obj2.display();
+
+        obj2.virtualMachineID = 2;
+   //     obj2.virtualMachine = "Hyper-V";
+
+        obj1.display();
+        obj2.display();
+    }
+}
