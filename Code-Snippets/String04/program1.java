@@ -1,6 +1,6 @@
 class Pratik{
 	
-	public static void main(String[] args){
+	public static void main(String[] pratik){
 
 		StringBuilder str1 = new StringBuilder("StringBuilder");
 
