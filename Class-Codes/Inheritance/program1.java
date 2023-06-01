@@ -25,6 +25,6 @@ class Client{
 		
 		Child obj1 = new Child();
 
-		obj1.ParentProperty();
+		//obj1.ParentProperty();
 	}
 }
