@@ -24,7 +24,7 @@ class Client{
 	public static void  main(String[] args){
 		
 		Child obj1 = new Child();
-
+		System.out.print("");
 		//obj1.ParentProperty();
 	}
 }
