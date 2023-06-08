@@ -28,5 +28,7 @@ class Client{
 		obj1.gun();
 
 		Parent obj2 = new Parent();
+		obj2.fun();
+//		obj2.gun();    error cannot find symbol
 	}
 }
