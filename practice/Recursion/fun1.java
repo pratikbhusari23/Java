@@ -5,6 +5,8 @@ class Demo{
 		if(start>5){
 			return;
 		}
+
+		System.out.println(start);
 		fun(start+1);
 		System.out.println(start);
 	}
