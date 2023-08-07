@@ -20,7 +20,8 @@ class Client{
 	
 	public static void main(String[] args){
 		
-		System.out.println(Demo.getTest().hashCode());
-		System.out.println(Demo.getTest().hashCode());
+	
+//		System.out.println(Demo.getTest().hashCode());
+//		System.out.println(Demo.getTest().hashCode());
 	}
 }
