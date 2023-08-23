@@ -15,9 +15,11 @@ class Demo{
 		t1.start();
 		System.out.println(t.getName());
 		System.out.println(t1.getName());
+		System.out.println(t1.getPriority());
 		
 		Thread.currentThread().setName("pratik");
-		System.out.println(Thread.currentThread().getName());		
+		System.out.println(Thread.currentThread().getName());				
+
 	
 	}
 }
