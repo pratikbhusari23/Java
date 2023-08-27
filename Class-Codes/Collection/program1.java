@@ -1,10 +1,11 @@
+import java.util.*;
 class ArrayListDemo{
 	
 	public static void main(String[] args){
 		
-		ArrayList a = new ArrayList();
+		ArrayList<String> a = new ArrayList<>(3);
 		a.add("A");
-		a.add(10);
+		a.add("10");
 		a.add("A");
 		a.add(null);
 
@@ -13,6 +14,11 @@ class ArrayListDemo{
 		System.out.println(a);
 		a.add(2,"m");
 		System.out.println(a);
+		System.out.println(a.size());
+		System.out.println(a.isEmpty());
+		a.trimToSize();
+		System.out.println(a);
+
 	
 	}
 }
