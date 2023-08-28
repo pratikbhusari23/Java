@@ -3,11 +3,12 @@ class ArrayListDemo{
 	
 	public static void main(String[] args){
 		
-		ArrayList<String> a = new ArrayList<>(3);
+		ArrayList<String> a = new ArrayList<>();
 		a.add("A");
 		a.add("10");
 		a.add("A");
 		a.add(null);
+		a.add("10");
 
 		System.out.println(a);
 		a.remove(2);
@@ -16,9 +17,18 @@ class ArrayListDemo{
 		System.out.println(a);
 		System.out.println(a.size());
 		System.out.println(a.isEmpty());
-		a.trimToSize();
 		System.out.println(a);
+		
+		System.out.println(a.contains("10"));
+		System.out.println(a.indexOf("10"));
+		System.out.println(a.lastIndexOf("10"));
 
+		System.out.println(a.get(1));
+		a.set(1,"20");
+		System.out.println(a.get(1));
+		a.clear();
+		a.removeRange(0,1);
 	
+		System.out.println(a);
 	}
 }
