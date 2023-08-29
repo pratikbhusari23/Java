@@ -1,4 +1,5 @@
 import java.util.*;
+
 class BinaryTree{
 	
 		
@@ -31,8 +32,10 @@ class BinaryTree{
 		 }
 
 	*/	
+		private Node root;
+		
 		public BinaryTree(){
-			
+			root=null;	
 		}
 
        		private static class Node{
@@ -45,19 +48,36 @@ class BinaryTree{
 			}
 		}	
 		
-		private Node root;
+		
 
 		// insert elements
 		
 		public void insert(Scanner scanner){
-			
+		
+			boolean validInput = false;
+		while(!validInput){
+		try{	
 			System.out.println("Enter the root Node: ");
 			int value = scanner.nextInt();
 			root = new Node(value);
 			insert(scanner,root);
-		}
-		private void insert(Scanner scanner , Node node){
+			validInput = true;
 
+		}catch(InputMismatchException e){
+			
+			System.out.println("Invalid Input , please enter a valid integer");
+			scanner.nextLine();
+
+		}
+		}
+		}
+
+		private void insert(Scanner scanner , Node node){
+			
+			boolean validInput=false;
+
+		while(!validInput){			
+		try{	
 			System.out.println("Do you want to enter left of "+node.value);
 			boolean left = scanner.nextBoolean();
 
@@ -67,6 +87,7 @@ class BinaryTree{
 				int value= scanner.nextInt();
 				node.left= new Node(value);
 				insert(scanner , node.left);
+		
 			}	
 			
 			System.out.println("Do you want to enter right of "+ node.value);
@@ -79,6 +100,15 @@ class BinaryTree{
 				node.right= new Node(value);
 				insert(scanner,node.right);
 			}
+			validInput = true;
+
+		}catch(InputMismatchException e){
+			
+			System.out.println("Invalid input , please enter true or false ");
+			scanner.nextLine();
+		}
+	
+		}
 		}
 
 		public void display(){
